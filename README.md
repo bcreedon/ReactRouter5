@@ -1,4 +1,5 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Tghis project requires react-bootstrap and react-router-dom
 
 ## Available Scripts
 
