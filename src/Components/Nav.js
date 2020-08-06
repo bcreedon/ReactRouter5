@@ -1,8 +1,7 @@
 import React from 'react';
 import '../App.css';
 import{Link} from 'react-router-dom'
-import { Dropdown } from 'react-bootstrap';
-import DropdownMenu from 'react-bootstrap/esm/DropdownMenu';
+import {Dropdown} from 'react-bootstrap';
 import {ButtonGroup} from 'react-bootstrap';
 
 function Nav() {
@@ -21,13 +20,23 @@ function Nav() {
         <Dropdown.Item as={Link} to='/Orders' class="ddlCRM">Orders</Dropdown.Item>
     </Dropdown.Menu >
 </Dropdown>
-
-        <Link to='/IT' style={navStyle}>
-            <li>IT</li>
-        </Link>
-        <Link to='/OMNI' style={navStyle}>
-            <li>OMNI</li>
-        </Link>        
+<Dropdown  as={ButtonGroup}>
+<Dropdown.Toggle variant="success">
+    IT
+  </Dropdown.Toggle>
+    <Dropdown.Menu>
+        <Dropdown.Item as={Link} to='/DatabaseLookup' class="ddlCRM">Database Lookup</Dropdown.Item>
+    </Dropdown.Menu >
+</Dropdown>
+<Dropdown  as={ButtonGroup}>
+<Dropdown.Toggle variant="success">
+    OMNI
+  </Dropdown.Toggle>
+    <Dropdown.Menu>
+        <Dropdown.Item as={Link} to='/ManagerLookup' class="ddlCRM">Manager Lookup</Dropdown.Item>
+    </Dropdown.Menu >
+</Dropdown>
+      
     </ul>
 </nav>
   );
