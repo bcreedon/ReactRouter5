@@ -1,11 +1,13 @@
 import React from 'react';
 import '../App.css';
+import Nav from './Nav'
 
 function Orders() {
   return (
     <div className="App">
       <header className="App-header">
-<h1>Orders Page</h1>
+      <Nav />
+      <h1>Orders Page</h1>
       </header>
     </div>
   );

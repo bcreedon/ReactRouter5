@@ -4,6 +4,7 @@ import Emails from './Components/Emails'
 import IT from './Components/IT'
 import OMNI from './Components/OMNI'
 import Orders from './Components/Orders'
+import Nav from './Components/Nav'
 import {Router} from '@reach/router'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -21,7 +22,7 @@ function App() {
 
 const Home = () => (
   <div>
-    <nav />
+    <Nav />
     <h1>Home Page</h1>
   </div>
 );
