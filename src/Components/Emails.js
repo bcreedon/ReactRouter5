@@ -5,6 +5,7 @@ function Emails() {
   return (
     <div className="App">
       <header className="App-header">
+      <nav />
 <h1>Emails Page</h1>
       </header>
     </div>
